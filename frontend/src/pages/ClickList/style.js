@@ -29,7 +29,7 @@ export const Container = styled.div`
 		}
 	}
 
-	div {
+	& > div {
 		display: flex;
 		height: 200px;
 		justify-content: center;
