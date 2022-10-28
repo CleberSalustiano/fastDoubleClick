@@ -21,8 +21,6 @@ class CreateNewDoubleClickRegistrationService {
 
 			const registrationData = JSON.parse(data.toString());
 
-			console.log(registrationData)
-
 			registrationData.push(newRegistration);
 
 			const jsonData = JSON.stringify(registrationData);

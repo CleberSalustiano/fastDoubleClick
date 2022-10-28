@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "../../components/Button";
 import api from "../../services/api";
-import { HomePage } from "./style";
+import { Container } from "./style";
 
 const Home = () => {
 	let isClicked = false;
@@ -26,10 +26,10 @@ const Home = () => {
 
 
 	return (
-		<HomePage>
+		<Container>
 			<Button onClick={handleDoubleClick}>Clique Aqui</Button>
-      <Button onClick={() => {navigate("/asdasd")}}>Próxima Página</Button>
-    </HomePage>
+      <Button onClick={() => {navigate("/clicklist")}}>Próxima Página</Button>
+    </Container>
 	);
 };
 
