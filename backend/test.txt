@@ -1,0 +1,17 @@
+var data = {
+  car: "cliff",
+  as: "34",
+  na12me: "ted",
+  asdd: "42",
+  name: "bob",
+  age: "12"
+}
+
+var jsonData = JSON.stringify(data);
+
+var fs = require('fs');
+fs.writeFile("test.json", jsonData, function(err) {
+    if (err) {
+        console.log(err);
+    }
+});
